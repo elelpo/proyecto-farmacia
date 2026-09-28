@@ -1,20 +1,93 @@
- <div class="container">
-      <h1>Farmacia</h1>
-      <div class="searchContainer">
-        <input
-          class="inputField"
-          id="cityField"
-          placeholder="Enter city name..."
-          type="text"
-        />
-        <button id="searchBtn">Search</button>
-      </div>
-      <div id="weatherContainer">
-        <h2 id="cityName"></h2>
-        <p id="temperature"></p>
-        <p id="condition"></p>
-        <p id="windSpeed"></p>
-      </div>
-      <p id="errorMessage"></p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farmacia Victoria Martín · Calle Jesús 16, Valencia</title>
+<meta name="description" content="Farmacia Victoria Martín en Valencia (Calle Jesús 16, 46007). Atención farmacéutica, dermofarmacia, nutrición, ortopedia y más.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>➕</text></svg>">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Pharmacy","name":"Farmacia Victoria Martín","url":"https://farmaciavictoriamartin.es",
+"address":{"@type":"PostalAddress","streetAddress":"Calle Jesús 16","addressLocality":"Valencia","postalCode":"46007","addressCountry":"ES"}}
+</script>
+</head>
+<body>
+<header class="header">
+  <div class="wrap nav">
+    <a class="logo" href="#inicio"><span class="cross">+</span> Farmacia Victoria Martín</a>
+    <button class="burger" aria-label="Menú" aria-expanded="false">☰</button>
+    <nav id="menu">
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#horario">Horario</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="wrap">
+    <p class="badge" id="estado">Comprobando horario…</p>
+    <h1>Tu farmacia de confianza en Valencia</h1>
+    <p class="lead">Consejo farmacéutico cercano, profesional y personalizado, en el corazón de Valencia.</p>
+    <div class="actions">
+      <a class="btn" href="#contacto">Cómo llegar</a>
+      <a class="btn ghost" href="#servicios">Ver servicios</a>
     </div>
-    <script src="script.js"></script>
+  </div>
+</section>
+
+<section id="servicios" class="wrap section">
+  <h2>Servicios</h2>
+  <div class="grid">
+    <article class="card"><div class="ico">💊</div><h3>Medicamentos y receta</h3><p>Dispensación con información clara sobre tu tratamiento.</p></article>
+    <article class="card"><div class="ico">🧴</div><h3>Dermofarmacia</h3><p>Cuidado de la piel, protección solar y cosmética farmacéutica.</p></article>
+    <article class="card"><div class="ico">🥗</div><h3>Nutrición y suplementos</h3><p>Asesoramiento en vitaminas, complementos y alimentación.</p></article>
+    <article class="card"><div class="ico">👶</div><h3>Bebé y familia</h3><p>Higiene, alimentación infantil y botiquín para toda la familia.</p></article>
+    <article class="card"><div class="ico">🩺</div><h3>Control de tensión y glucemia</h3><p>Medición de parámetros básicos de salud en la farmacia.</p></article>
+    <article class="card"><div class="ico">🦴</div><h3>Ortopedia</h3><p>Productos de ortopedia y ayudas para el día a día.</p></article>
+  </div>
+</section>
+
+<section id="nosotros" class="alt">
+  <div class="wrap section two">
+    <div>
+      <h2>Sobre nosotros</h2>
+      <p>En la Farmacia Victoria Martín llevamos la salud de nuestro barrio como algo personal. Te escuchamos, te explicamos y te ayudamos a elegir lo que de verdad necesitas.</p>
+      <p>Pasa por nuestra farmacia en la Calle Jesús y consúltanos sin compromiso.</p>
+    </div>
+    <ul class="checks">
+      <li>Atención personalizada</li>
+      <li>Consejo farmacéutico profesional</li>
+      <li>Productos de calidad</li>
+      <li>Trato cercano y de confianza</li>
+    </ul>
+  </div>
+</section>
+
+<section id="horario" class="wrap section">
+  <h2>Horario</h2>
+  <table class="hours" id="tabla-horario"></table>
+  <p class="note">Consulta cualquier cambio de horario, festivos y farmacias de guardia en el Colegio de Farmacéuticos de Valencia.</p>
+</section>
+
+<section id="contacto" class="alt">
+  <div class="wrap section two">
+    <div>
+      <h2>Contacto</h2>
+      <p><strong>Farmacia Victoria Martín</strong><br>Calle Jesús 16<br>46007 Valencia</p>
+      <p><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Calle+Jesus+16+46007+Valencia">Abrir en Google Maps</a></p>
+    </div>
+    <iframe title="Mapa" loading="lazy" src="https://www.google.com/maps?q=Calle+Jesus+16+46007+Valencia&output=embed"></iframe>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="anio"></span> Farmacia Victoria Martín · Calle Jesús 16, 46007 Valencia</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
