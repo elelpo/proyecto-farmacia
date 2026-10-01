@@ -40,7 +40,6 @@ estado();
 setInterval(estado, 60000);
 document.getElementById("anio").textContent = new Date().getFullYear();
 
-// ⚠️ Pon aquí el email real donde queréis recibir los encargos
 const EMAIL_ENCARGOS = "pedidos@farmaciavictoriamartin.es";
 
 const formEncargo = document.getElementById("form-encargo");
