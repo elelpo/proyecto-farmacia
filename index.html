@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Pharmacy","name":"Farmacia Victoria Martín","url":"https://farmaciavictoriamartin.es","telephone":"+34963513865",
 "address":{"@type":"PostalAddress","streetAddress":"Calle Jesús 16","addressLocality":"Valencia","postalCode":"46007","addressCountry":"ES"},
@@ -79,29 +79,32 @@
     <div class="encargo">
       <div class="quick-col">
         <a class="quick" href="tel:+34963513865">
-          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <span class="ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
           <span><strong>Llámanos</strong><small>963 51 38 65</small></span>
         </a>
         <a class="quick" href="https://wa.me/34696076711?text=Hola%2C%20quiero%20hacer%20un%20encargo" target="_blank" rel="noopener">
-          <span class="ico wa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1.2-1.6-2.1-1-.9.7a4 4 0 0 1-1.9-1.9l.7-.9-1-2.1z" fill="currentColor" stroke="none"/></svg></span>
+          <span class="ico wa" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1.2-1.6-2.1-1-.9.7a4 4 0 0 1-1.9-1.9l.7-.9-1-2.1z" fill="currentColor" stroke="none"/></svg></span>
           <span><strong>WhatsApp</strong><small>Escríbenos tu pedido</small></span>
         </a>
       </div>
-      <form id="form-encargo" class="card form-card">
-        <h3>Por correo</h3>
-        <p>Rellena el formulario y se abrirá tu aplicación de correo con el encargo listo para enviar.</p>
+      <form id="form-encargo" class="form-card">
+        <div class="form-head">
+          <h3>Encargo por correo</h3>
+          <p>Rellena los datos y se abrirá tu aplicación de correo con el mensaje listo para enviar.</p>
+        </div>
         <div class="form-row">
           <label>Nombre
-            <input type="text" name="nombre" autocomplete="name" required>
+            <input type="text" name="nombre" autocomplete="name" placeholder="Tu nombre" required>
           </label>
           <label>Teléfono de contacto
-            <input type="tel" name="telefono" autocomplete="tel" required>
+            <input type="tel" name="telefono" autocomplete="tel" placeholder="600 000 000" required>
           </label>
         </div>
         <label>¿Qué necesitas?
-          <textarea name="pedido" rows="4" required placeholder="Medicamento, producto, receta…"></textarea>
+          <textarea name="pedido" rows="5" required placeholder="Medicamento, producto, receta…"></textarea>
         </label>
         <button type="submit" class="btn">Enviar encargo</button>
+        <p class="form-note">Te avisaremos cuando esté listo para recoger.</p>
       </form>
     </div>
   </div>
@@ -143,6 +146,6 @@
 <footer>
   <div class="wrap">© <span id="anio"></span> Farmacia Victoria Martín · Calle Jesús 16, 46007 Valencia</div>
 </footer>
-<script src="script.js"></script>
+<script src="script.js?v=2"></script>
 </body>
 </html>
