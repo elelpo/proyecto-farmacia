@@ -68,3 +68,9 @@ footer{background:var(--texto);color:#cfe0d9;text-align:center;padding:24px 0;fo
  .two{grid-template-columns:1fr}
  .form-row{grid-template-columns:1fr}
 }
+.whatsapp-img{
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
