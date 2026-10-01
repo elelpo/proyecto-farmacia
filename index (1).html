@@ -19,6 +19,7 @@
     <button class="burger" aria-label="Menú" aria-expanded="false">☰</button>
     <nav id="menu">
       <a href="#servicios">Servicios</a>
+      <a href="#encargo">Encargo</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#horario">Horario</a>
       <a href="#contacto">Contacto</a>
@@ -48,6 +49,46 @@
     <article class="card"><div class="ico">👶</div><h3>Bebé y familia</h3><p>Higiene, alimentación infantil y botiquín para toda la familia.</p></article>
     <article class="card"><div class="ico">🩺</div><h3>Control de tensión y glucemia</h3><p>Medición de parámetros básicos de salud en la farmacia.</p></article>
     <article class="card"><div class="ico">🦴</div><h3>Ortopedia</h3><p>Productos de ortopedia y ayudas para el día a día.</p></article>
+  </div>
+</section>
+
+<section id="encargo" class="wrap section">
+  <h2>Haz tu encargo</h2>
+  <p class="lead-sm">Elige cómo prefieres hacernos tu pedido y nosotros lo preparamos para que lo recojas.</p>
+  <div class="grid encargo-grid">
+
+    <article class="card">
+      <div class="ico">📞</div>
+      <h3>Llámanos</h3>
+      <p>Teléfono principal de la farmacia.</p>
+      <a class="btn" href="tel:+96 351 38 65">963 51 38 65</a>
+    </article>
+
+    <article class="card">
+      <div class="ico">📱</div>
+      <h3>Segundo teléfono</h3>
+      <p>WhatsApp.</p>
+      <a class="btn" href="tel:+34XXXXXXXXX">696 07 67 11</a>
+    </article>
+
+    <article class="card encargo-form-card">
+      <div class="ico">✉️</div>
+      <h3>Por correo</h3>
+      <p>Rellena el formulario y se abrirá tu aplicación de correo con el encargo listo para enviar.</p>
+      <form id="form-encargo">
+        <label>Nombre
+          <input type="text" name="nombre" required>
+        </label>
+        <label>Teléfono de contacto
+          <input type="tel" name="telefono" required>
+        </label>
+        <label>¿Qué necesitas?
+          <textarea name="pedido" rows="4" required placeholder="Medicamento, producto, receta..."></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar encargo</button>
+      </form>
+    </article>
+
   </div>
 </section>
 

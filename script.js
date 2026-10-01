@@ -35,10 +35,33 @@ function estado(){
   el.textContent = abierto ? "🟢 Abierto ahora" : "🔴 Cerrado ahora";
 }
 
+
 estado();
 setInterval(estado, 60000);
 document.getElementById("anio").textContent = new Date().getFullYear();
 
+
+const EMAIL_ENCARGOS = "victoria.martin@farmaciavictoriamartin.es";
+ 
+const formEncargo = document.getElementById("form-encargo");
+if (formEncargo) {
+  formEncargo.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const datos = new FormData(formEncargo);
+    const nombre = datos.get("nombre").trim();
+    const telefono = datos.get("telefono").trim();
+    const pedido = datos.get("pedido").trim();
+ 
+    const asunto = `Encargo web - ${nombre}`;
+    const cuerpo =
+      `Nombre: ${nombre}\n` +
+      `Teléfono: ${telefono}\n\n` +
+      `Pedido:\n${pedido}`;
+ 
+    const mailto = `mailto:${EMAIL_ENCARGOS}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+    window.location.href = mailto;
+  });
+} 
 const burger = document.querySelector(".burger"), menu = document.getElementById("menu");
 burger.addEventListener("click", () => {
   const abierto = menu.classList.toggle("open");
