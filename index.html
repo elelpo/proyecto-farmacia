@@ -43,13 +43,34 @@
 <section id="servicios" class="wrap section">
   <h2>Servicios</h2>
   <div class="grid">
-    <article class="card"><div class="ico"></div><h3>Perforación del lóbulo</h3><p>En nuestra farmacia dispones de este servicio para que luzcas nuevos pendientes.</p></article>
-    <article class="card"><div class="ico"></div><h3>Medicion de glucosa</h3><p>Medimos los niveles de glucosa en sangre, así podras tomar medidas a tiempo.</p></article>
-    <article class="card"><div class="ico"></div><h3>Dietética y nutrición</h3><p>Tanto para perder peso como para mejorar tu base alimenticia te ayudamos.</p></article>
-    <article class="card"><div class="ico"></div><h3>Veterinaria</h3><p>Tenemos productos para tratar y ayudar a tu mascota.</p></article>
-    <article class="card"><div class="ico"></div><h3>Toma de tensión</h3><p>Controlar tu tensión regularmente puede prevenir riesgos cardíacos.¡Ven y te teomaremos la tensión!</p></article>
-    <article class="card"><div class="ico"></div><h3>Ortopedia</h3><p>Productos de ortopedia y ayudas para el día a día.</p></article>
-    <article class="card"><div class="ico"></div><h3>Dermocosmética</h3><p>Te damos el mejor asesoramiento para el prodcuto ideal para la belleza y salud de tu piel.</p></article>
+    <article class="card">
+      <img class="card-img" src="img/perforacion.webp" alt="Perforación del lóbulo" loading="lazy">
+      <div class="card-body"><h3>Perforación del lóbulo</h3><p>En nuestra farmacia dispones de este servicio para que luzcas nuevos pendientes.</p></div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="img/glucosa.webp" alt="Medición de glucosa" loading="lazy">
+      <div class="card-body"><h3>Medición de glucosa</h3><p>Medimos los niveles de glucosa en sangre, así podrás tomar medidas a tiempo.</p></div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="img/dieta.webp" alt="Dietética y nutrición" loading="lazy">
+      <div class="card-body"><h3>Dietética y nutrición</h3><p>Tanto para perder peso como para mejorar tu base alimenticia te ayudamos.</p></div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="img/veterinaria.webp" alt="Veterinaria" loading="lazy">
+      <div class="card-body"><h3>Veterinaria</h3><p>Tenemos productos para tratar y ayudar a tu mascota.</p></div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="img/toma-tension.webp" alt="Toma de tensión" loading="lazy">
+      <div class="card-body"><h3>Toma de tensión</h3><p>Controlar tu tensión regularmente puede prevenir riesgos cardíacos. ¡Ven y te tomamos la tensión!</p></div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="img/ortopedia.webp" alt="Ortopedia" loading="lazy">
+      <div class="card-body"><h3>Ortopedia</h3><p>Productos de ortopedia y ayudas para el día a día.</p></div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="img/dermocosmetica.webp" alt="Dermocosmética" loading="lazy">
+      <div class="card-body"><h3>Dermocosmética</h3><p>Te damos el mejor asesoramiento para el producto ideal para la belleza y salud de tu piel.</p></div>
+    </article>
   </div>
 </section>
 
@@ -58,31 +79,30 @@
   <p class="lead-sm">Elige cómo prefieres hacernos tu pedido y nosotros lo preparamos para que lo recojas.</p>
   <div class="grid encargo-grid">
 
-    <article class="card">
-      <div class="ico"></div>
-      <h3>Llámanos</h3>
-      <p>Teléfono principal de la farmacia.</p>
+    <article class="card tel-card">
+      <div class="ico">📞</div>
+      <div class="card-body"><h3>Llámanos</h3><p>Teléfono principal de la farmacia.</p></div>
       <a class="btn" href="tel:+34963513865">963 51 38 65</a>
     </article>
 
-    <article class="card">
-      <div class="ico"></div>
-      <h3>Segundo teléfono</h3>
-      <p>WhatsApp.</p>
+    <article class="card tel-card">
+      <div class="ico">📱</div>
+      <div class="card-body"><h3>Segundo teléfono</h3><p>WhatsApp.</p></div>
       <a class="btn" href="tel:+34696076711">696 07 67 11</a>
     </article>
 
     <article class="card encargo-form-card">
-      <div class="ico">✉️</div>
-      <h3>Por correo</h3>
-      <p>Rellena el formulario y se abrirá tu aplicación de correo con el encargo listo para enviar.</p>
+      <div class="card-body"><div class="ico">✉️</div><h3>Por correo</h3>
+      <p>Rellena el formulario y se abrirá tu aplicación de correo con el encargo listo para enviar.</p></div>
       <form id="form-encargo">
-        <label>Nombre
-          <input type="text" name="nombre" required>
-        </label>
-        <label>Teléfono de contacto
-          <input type="tel" name="telefono" required>
-        </label>
+        <div class="form-row">
+          <label>Nombre
+            <input type="text" name="nombre" required>
+          </label>
+          <label>Teléfono de contacto
+            <input type="tel" name="telefono" required>
+          </label>
+        </div>
         <label>¿Qué necesitas?
           <textarea name="pedido" rows="4" required placeholder="Medicamento, producto, receta..."></textarea>
         </label>

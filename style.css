@@ -16,24 +16,21 @@ nav a:hover{color:var(--verde)}
 .lead{font-size:1.2rem;max-width:560px}
 .badge{display:inline-block;background:rgba(255,255,255,.2);padding:5px 14px;border-radius:99px;font-size:.9rem;margin:0}
 .actions{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;background:#fff;color:var(--verde-osc);padding:12px 24px;border-radius:8px;font-weight:600;text-decoration:none}
+.btn{display:inline-block;background:#fff;color:var(--verde-osc);padding:12px 24px;border-radius:8px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font:inherit}
 .section .btn,.alt .btn{background:var(--verde);color:#fff}
 .btn.ghost{background:transparent!important;color:#fff!important;border:2px solid #fff}
 .section{padding-top:60px;padding-bottom:60px}
 h2{font-size:1.9rem;margin:0 0 24px;color:var(--verde-osc)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{border:1px solid #e3ece8;border-radius:12px;padding:24px}
-.card h3{margin:.4em 0 .2em}.card p{color:var(--gris);margin:0}
+
+/* Tarjetas de servicios */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{border:1px solid #e3ece8;border-radius:12px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.card-img{width:100%;height:160px;object-fit:cover;display:block}
+.card-body{padding:18px 20px}
+.card h3{margin:0 0 6px}
+.card p{color:var(--gris);margin:0}
 .ico{font-size:2rem}
 .alt{background:var(--claro)}
-.lead-sm{color:var(--gris);max-width:640px;margin-top:-10px}
-.encargo-grid .card{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
-.encargo-grid .btn{margin-top:auto;align-self:flex-start}
-.encargo-form-card form{width:100%;display:flex;flex-direction:column;gap:12px;margin-top:6px}
-.encargo-form-card label{display:flex;flex-direction:column;gap:4px;font-size:.9rem;font-weight:600;color:var(--texto)}
-.encargo-form-card input,.encargo-form-card textarea{font:inherit;padding:10px 12px;border:1px solid #cfe0d9;border-radius:8px;resize:vertical}
-.encargo-form-card input:focus,.encargo-form-card textarea:focus{outline:2px solid var(--verde)}
-.encargo-form-card button{border:0;cursor:pointer;margin-top:4px;align-self:flex-start}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .checks{list-style:none;padding:0;margin:0}
 .checks li{padding:12px 0 12px 34px;position:relative;border-bottom:1px solid #cfe6db;font-weight:500}
@@ -44,10 +41,30 @@ iframe{width:100%;height:320px;border:0;border-radius:12px}
 .hours tr.hoy{background:var(--claro);font-weight:700}
 .note{color:var(--gris);font-size:.9rem}
 footer{background:var(--texto);color:#cfe0d9;text-align:center;padding:24px 0;font-size:.9rem}
+
+/* Encargo */
+.lead-sm{color:var(--gris);max-width:640px;margin-top:-10px}
+.encargo-grid{align-items:start}
+.tel-card{padding:24px;gap:6px}
+.tel-card .ico{margin-bottom:4px}
+.tel-card .card-body{padding:0;margin-bottom:14px}
+.tel-card .btn{align-self:flex-start}
+
+.encargo-form-card{grid-column:1 / -1;padding:28px;max-width:640px}
+.encargo-form-card .card-body{padding:0;margin-bottom:16px}
+.encargo-form-card .ico{display:block;margin-bottom:6px}
+.encargo-form-card form{display:flex;flex-direction:column;gap:16px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.encargo-form-card label{display:flex;flex-direction:column;gap:6px;font-size:.9rem;font-weight:600;color:var(--texto)}
+.encargo-form-card input,.encargo-form-card textarea{font:inherit;padding:11px 12px;border:1px solid #cfe0d9;border-radius:8px;resize:vertical;width:100%}
+.encargo-form-card input:focus,.encargo-form-card textarea:focus{outline:2px solid var(--verde)}
+.encargo-form-card button{margin-top:4px;align-self:flex-start}
+
 @media(max-width:760px){
  .burger{display:block}
  nav{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;padding:10px 20px;border-bottom:1px solid #e3ece8}
  nav.open{display:block}
  nav a{display:block;margin:0;padding:12px 0}
  .two{grid-template-columns:1fr}
+ .form-row{grid-template-columns:1fr}
 }
