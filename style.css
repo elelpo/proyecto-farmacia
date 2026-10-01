@@ -26,6 +26,14 @@ h2{font-size:1.9rem;margin:0 0 24px;color:var(--verde-osc)}
 .card h3{margin:.4em 0 .2em}.card p{color:var(--gris);margin:0}
 .ico{font-size:2rem}
 .alt{background:var(--claro)}
+.lead-sm{color:var(--gris);max-width:640px;margin-top:-10px}
+.encargo-grid .card{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.encargo-grid .btn{margin-top:auto;align-self:flex-start}
+.encargo-form-card form{width:100%;display:flex;flex-direction:column;gap:12px;margin-top:6px}
+.encargo-form-card label{display:flex;flex-direction:column;gap:4px;font-size:.9rem;font-weight:600;color:var(--texto)}
+.encargo-form-card input,.encargo-form-card textarea{font:inherit;padding:10px 12px;border:1px solid #cfe0d9;border-radius:8px;resize:vertical}
+.encargo-form-card input:focus,.encargo-form-card textarea:focus{outline:2px solid var(--verde)}
+.encargo-form-card button{border:0;cursor:pointer;margin-top:4px;align-self:flex-start}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .checks{list-style:none;padding:0;margin:0}
 .checks li{padding:12px 0 12px 34px;position:relative;border-bottom:1px solid #cfe6db;font-weight:500}
