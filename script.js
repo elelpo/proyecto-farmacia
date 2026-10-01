@@ -1,5 +1,4 @@
-// ⚠️ EDITA AQUÍ EL HORARIO REAL. Formato "HH:MM-HH:MM"; varios tramos separados por coma; [] = cerrado.
-// 0 = domingo, 1 = lunes ... 6 = sábado
+
 const HORARIO = {
   1: ["09:30-14:00", "17:00-20:30"],
   2: ["09:30-14:00", "17:00-20:30"],
