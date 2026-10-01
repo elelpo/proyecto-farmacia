@@ -1,12 +1,13 @@
-
+// ⚠️ EDITA AQUÍ EL HORARIO REAL. Formato "HH:MM-HH:MM"; varios tramos separados por coma; [] = cerrado.
+// 0 = domingo, 1 = lunes ... 6 = sábado
 const HORARIO = {
-  1: ["09:00-14:00", "16:30-20:30"],
-  2: ["09:00-14:00", "16:30-20:30"],
-  3: ["09:00-14:00", "16:30-20:30"],
-  4: ["09:00-14:00", "16:30-20:30"],
-  5: ["09:00-14:00", "16:30-20:00"],
-  6: ["09:30-13:30"],
-  0: ["Cerrado"]
+  1: ["09:30-14:00", "17:00-20:30"],
+  2: ["09:30-14:00", "17:00-20:30"],
+  3: ["09:30-14:00", "17:00-20:30"],
+  4: ["09:30-14:00", "17:00-20:30"],
+  5: ["09:30-14:00", "17:00-20:30"],
+  6: ["09:30-14:00"],
+  0: []
 };
 const DIAS = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
 const ORDEN = [1,2,3,4,5,6,0];
@@ -35,33 +36,10 @@ function estado(){
   el.textContent = abierto ? "🟢 Abierto ahora" : "🔴 Cerrado ahora";
 }
 
-
 estado();
 setInterval(estado, 60000);
 document.getElementById("anio").textContent = new Date().getFullYear();
 
-
-const EMAIL_ENCARGOS = "victoria.martin@farmaciavictoriamartin.es";
- 
-const formEncargo = document.getElementById("form-encargo");
-if (formEncargo) {
-  formEncargo.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const datos = new FormData(formEncargo);
-    const nombre = datos.get("nombre").trim();
-    const telefono = datos.get("telefono").trim();
-    const pedido = datos.get("pedido").trim();
- 
-    const asunto = `Encargo web - ${nombre}`;
-    const cuerpo =
-      `Nombre: ${nombre}\n` +
-      `Teléfono: ${telefono}\n\n` +
-      `Pedido:\n${pedido}`;
- 
-    const mailto = `mailto:${EMAIL_ENCARGOS}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
-    window.location.href = mailto;
-  });
-} 
 const burger = document.querySelector(".burger"), menu = document.getElementById("menu");
 burger.addEventListener("click", () => {
   const abierto = menu.classList.toggle("open");
