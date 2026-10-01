@@ -5,19 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Farmacia Victoria Martín · Calle Jesús 16, Valencia</title>
 <meta name="description" content="Farmacia Victoria Martín en Valencia (Calle Jesús 16, 46007). Atención farmacéutica, dermofarmacia, nutrición, ortopedia y más.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>➕</text></svg>">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a6b4a'/%3E%3Cpath d='M42 20h16v22h22v16H58v22H42V58H20V42h22z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Pharmacy","name":"Farmacia Victoria Martín","url":"https://farmaciavictoriamartin.es",
-"address":{"@type":"PostalAddress","streetAddress":"Calle Jesús 16","addressLocality":"Valencia","postalCode":"46007","addressCountry":"ES"}}
+{"@context":"https://schema.org","@type":"Pharmacy","name":"Farmacia Victoria Martín","url":"https://farmaciavictoriamartin.es","telephone":"+34963513865",
+"address":{"@type":"PostalAddress","streetAddress":"Calle Jesús 16","addressLocality":"Valencia","postalCode":"46007","addressCountry":"ES"},
+"openingHoursSpecification":[
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:30","closes":"14:00"},
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"17:00","closes":"20:30"},
+{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:30","closes":"14:00"}]}
 </script>
 </head>
 <body>
+<a class="skip" href="#servicios">Saltar al contenido</a>
 <header class="header">
   <div class="wrap nav">
-    <a class="logo" href="#inicio"><span class="cross">+</span> Farmacia Victoria Martín</a>
-    <button class="burger" aria-label="Menú" aria-expanded="false">☰</button>
-    <nav id="menu">
+    <a class="logo" href="#inicio"><span class="cross" aria-hidden="true">+</span> Farmacia Victoria Martín</a>
+    <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav id="menu" aria-label="Principal">
       <a href="#servicios">Servicios</a>
       <a href="#encargo">Encargo</a>
       <a href="#nosotros">Nosotros</a>
@@ -30,12 +38,12 @@
 <main>
 <section id="inicio" class="hero">
   <div class="wrap">
-    <p class="badge" id="estado">Comprobando horario…</p>
-    <h1>Tu farmacia de confianza en Valencia</h1>
-    <p class="lead">Consejo farmacéutico cercano, profesional y personalizado, en el corazón de Valencia.</p>
+    <p class="badge" id="estado" role="status">Comprobando horario…</p>
+    <h1>Tu farmacia de confianza en el barrio</h1>
+    <p class="lead">Consejo farmacéutico cercano y personalizado en la Calle Jesús, Valencia.</p>
     <div class="actions">
-      <a class="btn" href="#contacto">Cómo llegar</a>
-      <a class="btn ghost" href="#servicios">Ver servicios</a>
+      <a class="btn" href="tel:+34963513865">Llamar: 963 51 38 65</a>
+      <a class="btn ghost" href="#encargo">Hacer un encargo</a>
     </div>
   </div>
 </section>
@@ -43,118 +51,92 @@
 <section id="servicios" class="wrap section">
   <h2>Servicios</h2>
   <div class="grid">
-    <article class="card">
-      <img class="card-img" src="img/perforacion.webp" alt="Perforación del lóbulo" loading="lazy">
-      <div class="card-body"><h3>Perforación del lóbulo</h3><p>En nuestra farmacia dispones de este servicio para que luzcas nuevos pendientes.</p></div>
-    </article>
-    <article class="card">
-      <img class="card-img" src="img/glucosa.webp" alt="Medición de glucosa" loading="lazy">
-      <div class="card-body"><h3>Medición de glucosa</h3><p>Medimos los niveles de glucosa en sangre, así podrás tomar medidas a tiempo.</p></div>
-    </article>
-    <article class="card">
-      <img class="card-img" src="img/dieta.webp" alt="Dietética y nutrición" loading="lazy">
-      <div class="card-body"><h3>Dietética y nutrición</h3><p>Tanto para perder peso como para mejorar tu base alimenticia te ayudamos.</p></div>
-    </article>
-    <article class="card">
-      <img class="card-img" src="img/veterinaria.webp" alt="Veterinaria" loading="lazy">
-      <div class="card-body"><h3>Veterinaria</h3><p>Tenemos productos para tratar y ayudar a tu mascota.</p></div>
-    </article>
-    <article class="card">
-      <img class="card-img" src="img/toma-tension.webp" alt="Toma de tensión" loading="lazy">
-      <div class="card-body"><h3>Toma de tensión</h3><p>Controlar tu tensión regularmente puede prevenir riesgos cardíacos. ¡Ven y te tomamos la tensión!</p></div>
-    </article>
-    <article class="card">
-      <img class="card-img" src="img/ortopedia.webp" alt="Ortopedia" loading="lazy">
-      <div class="card-body"><h3>Ortopedia</h3><p>Productos de ortopedia y ayudas para el día a día.</p></div>
-    </article>
-    <article class="card">
-      <img class="card-img" src="img/dermocosmetica.webp" alt="Dermocosmética" loading="lazy">
-      <div class="card-body"><h3>Dermocosmética</h3><p>Te damos el mejor asesoramiento para el producto ideal para la belleza y salud de tu piel.</p></div>
-    </article>
-    <article class="card">
-      <img class="card-img" src="img/gafas.webp" alt="Gafas presbicia y de sol" loading="lazy">
-      <div class="card-body"><h3>Gafas presbicia y de sol</h3><p>Ofrecemos una amplia variedad de gafas ya sea para ayudar con la vista cansada o la molestia del sol.</p></div>
-    </article>
-    <article class="card">
-      <img class="card-img" src="img/formulacion.webp" alt="Formulación magistral" loading="lazy">
-      <div class="card-body"><h3>Formulación magistral</h3><p>Elaboramos la solución medicinal que necesitas para tus tratamientos mediante la formulación magistral.</p></div>
-    </article>
+    <article class="card"><img class="card-img" src="img/perforacion.webp" alt="Perforación del lóbulo" loading="lazy">
+      <div class="card-body"><h3>Perforación del lóbulo</h3><p>Lleva unos pendientes nuevos con la seguridad de hacerlo en tu farmacia.</p></div></article>
+    <article class="card"><img class="card-img" src="img/glucosa.webp" alt="Medición de glucosa" loading="lazy">
+      <div class="card-body"><h3>Medición de glucosa</h3><p>Medimos tu glucosa en sangre para que puedas actuar a tiempo.</p></div></article>
+    <article class="card"><img class="card-img" src="img/dieta.webp" alt="Dietética y nutrición" loading="lazy">
+      <div class="card-body"><h3>Dietética y nutrición</h3><p>Te ayudamos a perder peso o a mejorar tu alimentación.</p></div></article>
+    <article class="card"><img class="card-img" src="img/veterinaria.webp" alt="Veterinaria" loading="lazy">
+      <div class="card-body"><h3>Veterinaria</h3><p>Productos para tratar y cuidar a tu mascota.</p></div></article>
+    <article class="card"><img class="card-img" src="img/toma-tension.webp" alt="Toma de tensión" loading="lazy">
+      <div class="card-body"><h3>Toma de tensión</h3><p>Controlar la tensión con regularidad ayuda a prevenir problemas cardíacos. Pasa y te la tomamos.</p></div></article>
+    <article class="card"><img class="card-img" src="img/ortopedia.webp" alt="Ortopedia" loading="lazy">
+      <div class="card-body"><h3>Ortopedia</h3><p>Productos de ortopedia y ayudas para el día a día.</p></div></article>
+    <article class="card"><img class="card-img" src="img/dermocosmetica.webp" alt="Dermocosmética" loading="lazy">
+      <div class="card-body"><h3>Dermocosmética</h3><p>Te asesoramos para elegir el producto ideal para la salud y la belleza de tu piel.</p></div></article>
+    <article class="card"><img class="card-img" src="img/gafas.webp" alt="Gafas de presbicia y de sol" loading="lazy">
+      <div class="card-body"><h3>Gafas de presbicia y de sol</h3><p>Gran variedad de gafas para la vista cansada o para protegerte del sol.</p></div></article>
+    <article class="card"><img class="card-img" src="img/formulacion.webp" alt="Formulación magistral" loading="lazy">
+      <div class="card-body"><h3>Formulación magistral</h3><p>Elaboramos la fórmula que necesita tu tratamiento.</p></div></article>
   </div>
 </section>
 
-<section id="encargo" class="wrap section">
-  <h2>Haz tu encargo</h2>
-  <p class="lead-sm">Elige cómo prefieres hacernos tu pedido y nosotros lo preparamos para que lo recojas.</p>
-  <div class="grid encargo-grid">
-
-    <article class="card tel-card">
-      <div class="ico">📞</div>
-      <div class="card-body"><h3>Llámanos</h3><p>Teléfono principal de la farmacia.</p></div>
-      <a class="btn" href="tel:+34963513865">963 51 38 65</a>
-    </article>
-
-    <article class="card tel-card">
-        img/whatsapp.png
-    <div class="card-body">
-    <h3>WhatsApp</h3>
-    <p>Consúltanos cualquier cosa por WhatsApp.</p>
-    </div>
-    https://wa.me/34696076711 </a>
-    </article>
-
-    <article class="card encargo-form-card">
-      <div class="card-body"><div class="ico">✉️</div><h3>Por correo</h3>
-      <p>Rellena el formulario y se abrirá tu aplicación de correo con el encargo listo para enviar.</p></div>
-      <form id="form-encargo">
+<section id="encargo" class="alt">
+  <div class="wrap section">
+    <h2>Haz tu encargo</h2>
+    <p class="lead-sm">Elige cómo prefieres pedirlo. Nosotros lo preparamos y tú lo recoges.</p>
+    <div class="encargo">
+      <div class="quick-col">
+        <a class="quick" href="tel:+34963513865">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <span><strong>Llámanos</strong><small>963 51 38 65</small></span>
+        </a>
+        <a class="quick" href="https://wa.me/34696076711?text=Hola%2C%20quiero%20hacer%20un%20encargo" target="_blank" rel="noopener">
+          <span class="ico wa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1.2-1.6-2.1-1-.9.7a4 4 0 0 1-1.9-1.9l.7-.9-1-2.1z" fill="currentColor" stroke="none"/></svg></span>
+          <span><strong>WhatsApp</strong><small>Escríbenos tu pedido</small></span>
+        </a>
+      </div>
+      <form id="form-encargo" class="card form-card">
+        <h3>Por correo</h3>
+        <p>Rellena el formulario y se abrirá tu aplicación de correo con el encargo listo para enviar.</p>
         <div class="form-row">
           <label>Nombre
-            <input type="text" name="nombre" required>
+            <input type="text" name="nombre" autocomplete="name" required>
           </label>
           <label>Teléfono de contacto
-            <input type="tel" name="telefono" required>
+            <input type="tel" name="telefono" autocomplete="tel" required>
           </label>
         </div>
         <label>¿Qué necesitas?
-          <textarea name="pedido" rows="4" required placeholder="Medicamento, producto, receta..."></textarea>
+          <textarea name="pedido" rows="4" required placeholder="Medicamento, producto, receta…"></textarea>
         </label>
         <button type="submit" class="btn">Enviar encargo</button>
       </form>
-    </article>
-
-  </div>
-</section>
-
-<section id="nosotros" class="alt">
-  <div class="wrap section two">
-    <div>
-      <h2>Sobre nosotros</h2>
-      <p>En la Farmacia Victoria Martín llevamos la salud de nuestro barrio como algo personal. Te escuchamos, te explicamos y te ayudamos a elegir lo que de verdad necesitas.</p>
-      <p>Pasa por nuestra farmacia en la Calle Jesús y consúltanos sin compromiso.</p>
     </div>
-    <ul class="checks">
-      <li>Atención personalizada</li>
-      <li>Consejo farmacéutico profesional</li>
-      <li>Productos de calidad</li>
-      <li>Trato cercano y de confianza</li>
-    </ul>
   </div>
 </section>
 
-<section id="horario" class="wrap section">
-  <h2>Horario</h2>
-  <table class="hours" id="tabla-horario"></table>
-  <p class="note">Consulta cualquier cambio de horario, festivos y farmacias de guardia en el Colegio de Farmacéuticos de Valencia.</p>
+<section id="nosotros" class="wrap section two">
+  <div>
+    <h2>Sobre nosotros</h2>
+    <p>En la Farmacia Victoria Martín llevamos la salud de nuestro barrio como algo personal. Te escuchamos, te explicamos y te ayudamos a elegir lo que de verdad necesitas.</p>
+    <p>Pasa por la Calle Jesús y consúltanos sin compromiso.</p>
+  </div>
+  <ul class="checks">
+    <li>Atención personalizada</li>
+    <li>Consejo farmacéutico profesional</li>
+    <li>Productos de calidad</li>
+    <li>Trato cercano y de confianza</li>
+  </ul>
 </section>
 
-<section id="contacto" class="alt">
-  <div class="wrap section two">
-    <div>
-      <h2>Contacto</h2>
-      <p><strong>Farmacia Victoria Martín</strong><br>Calle Jesús 16<br>46007 Valencia</p>
-      <p><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Calle+Jesus+16+46007+Valencia">Abrir en Google Maps</a></p>
-    </div>
-    <iframe title="Mapa" loading="lazy" src="https://www.google.com/maps?q=Calle+Jesus+16+46007+Valencia&output=embed"></iframe>
+<section id="horario" class="alt">
+  <div class="wrap section">
+    <h2>Horario</h2>
+    <table class="hours" id="tabla-horario"></table>
+    <p class="note">Consulta cambios de horario, festivos y farmacias de guardia en el Colegio de Farmacéuticos de Valencia.</p>
   </div>
+</section>
+
+<section id="contacto" class="wrap section two">
+  <div>
+    <h2>Contacto</h2>
+    <p><strong>Farmacia Victoria Martín</strong><br>Calle Jesús 16<br>46007 Valencia</p>
+    <p>Teléfono: <a href="tel:+34963513865">963 51 38 65</a></p>
+    <p><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Calle+Jesus+16+46007+Valencia">Abrir en Google Maps</a></p>
+  </div>
+  <iframe title="Mapa de la farmacia" loading="lazy" src="https://www.google.com/maps?q=Calle+Jesus+16+46007+Valencia&output=embed"></iframe>
 </section>
 </main>
 
