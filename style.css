@@ -11,8 +11,8 @@ a{color:var(--verde-osc)}
 
 .header{position:sticky;top:0;background:rgba(251,250,246,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea);z-index:10}
 .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.15rem;text-decoration:none;color:var(--verde-osc);display:flex;align-items:center;gap:8px}
-.cross{display:grid;place-items:center;width:28px;height:28px;background:var(--verde);color:#fff;border-radius:6px;font-family:Figtree,sans-serif}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.15rem;text-decoration:none;color:var(--verde-osc);display:flex;align-items:center;gap:10px}
+.logo-mark{display:block;height:46px;width:auto}
 nav a{margin-left:24px;text-decoration:none;color:var(--texto);font-weight:500}
 nav a:hover{color:var(--verde);text-decoration:underline;text-underline-offset:6px}
 .burger{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--texto)}
