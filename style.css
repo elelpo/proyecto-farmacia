@@ -19,6 +19,9 @@ nav a:hover{color:var(--verde);text-decoration:underline;text-underline-offset:6
 
 .hero{background:var(--verde-osc);color:#fff;padding:96px 0 104px}
 .hero h1{font-size:clamp(2.2rem,5.5vw,3.8rem);margin:.45em 0 .3em;max-width:16ch;font-weight:700}
+.hero-title{margin-bottom:24px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.hero-title h1{flex:1 1 320px}
+.hero-logo{display:block;width:clamp(280px,42vw,500px);height:auto;background:#fff;border-radius:16px;padding:20px 26px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
 .lead{font-size:1.2rem;max-width:520px;opacity:.92;margin:0}
 .badge{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:6px 16px;border-radius:99px;font-size:.92rem;margin:0}
 .actions{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
@@ -88,6 +91,8 @@ footer{background:var(--texto);color:#cfe0d9;text-align:center;padding:26px 0;fo
  .marcas-list li{height:80px}
  .marcas-list img{max-width:150px;max-height:64px}
  .hero{padding:64px 0 72px}
+ .hero-title{gap:4px}
+ .hero-logo{width:100%;max-width:360px}
  .section{padding-top:52px;padding-bottom:52px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
