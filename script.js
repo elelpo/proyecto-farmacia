@@ -43,12 +43,12 @@ function estado(){
   const el = document.getElementById("estado");
   const tramo = HORARIO[dia].find(r => { const [a,b] = r.split("-"); return min >= aMin(a) && min < aMin(b); });
   if (tramo) {
-    el.textContent = `🟢 Abierto ahora · cierra a las ${tramo.split("-")[1]}`;
+    el.textContent = `Abierto ahora · cierra a las ${tramo.split("-")[1]}`;
     return;
   }
   const n = proxima(dia, min);
   const cuando = n.i === 0 ? "hoy" : n.i === 1 ? "mañana" : `el ${DIAS[n.d].toLowerCase()}`;
-  el.textContent = `🔴 Cerrado ahora · abre ${cuando} a las ${n.a}`;
+  el.textContent = `Cerrado ahora · abre ${cuando} a las ${n.a}`;
 }
 
 estado();
